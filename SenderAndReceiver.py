@@ -1,8 +1,3 @@
-import time
-import random
-import threading
-from typing import List
-
 class SenderAndReceiver:
     def __init__(self, name: str) -> None:
         self.name = name
@@ -28,5 +23,5 @@ class SenderAndReceiver:
         return self._clock
 
     @clock.setter
-    def clock(self, value):
+    def clock(self, value) -> None:
         self._clock = value
